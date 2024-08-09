@@ -1,0 +1,34 @@
+.food-display{
+    margin-top: 3.125rem;
+}
+.food-display h2{
+    font-size: 1.875rem;
+    text-decoration: underline;
+}
+
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.25rem;
+}
+
+@media(max-width:1080px){
+    .food-display-list{
+        display: grid;
+        grid-template-columns: repeat(3,0.5fr);
+    }
+}
+
+@media(max-width:870px){
+    .food-display-list{
+        display: grid;
+        grid-template-columns: repeat(2,0.5fr);
+    }
+}
+
+@media(max-width:580px){
+    .food-display-list{
+        display: grid;
+        grid-template-columns: 1fr
+    }
+}

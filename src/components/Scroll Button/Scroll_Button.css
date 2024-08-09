@@ -1,0 +1,25 @@
+.scrollbtn {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 2;
+}
+
+.scrollbtn button {
+    border: none;
+    outline: none;
+    background-color: tomato;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrollbtn button:hover{
+    box-shadow: 0 0 0 5px tomato;
+}
+
+    

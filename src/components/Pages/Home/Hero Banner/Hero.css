@@ -1,0 +1,123 @@
+.header{
+    background: url('header_img.png') no-repeat;
+    background-size: contain;
+    height: 80vh;
+}
+
+.header-contents{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: start;
+    max-width: 50%;
+    bottom: 12.5rem;
+    left: 15rem;
+    color: #ffffff;
+    gap: .625rem;
+    animation: fadein 3s;
+}
+.header-contents h1{
+    font-size: 2.5rem;
+}
+.header-contents p{
+    font-size: 1.25rem;
+}
+.header-contents button{
+    background: #ffffff;
+    outline: none;
+    width: 9.375rem;
+    height: 3.125rem;
+    border: none;
+    border-radius: 1.875rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.header-contents button:hover{
+    background: #000000;
+    color: #ffffff;
+    transition: 0.8s;
+}
+
+@media(max-width:1050px){
+    .header{
+        height: 60vh;
+    }
+    .header-contents{
+        width: 50%;
+        gap: 8px;
+        left: 150px;
+        bottom: 280px;
+    }
+    .header-contents button{
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:980px){
+    .header-contents{
+        width: 50%;
+        gap: 5px;
+        left: 100px;
+        bottom: 350px;
+    }
+    .header-contents h1{
+        font-size: 20px;
+    }
+    .header-contents p{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:800px){
+    .header-contents{
+        width: 50%;
+        gap: 5px;
+        left: 100px;
+        bottom: 430px;
+    }
+    .header-contents h1{
+        font-size: 16px;
+    }
+    .header-contents p{
+        font-size: 12px;
+    }
+    .header-contents button{
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:670px){
+    .header{
+        height: 32vh;
+        margin-top: 10px;
+    }
+    .header-contents{
+        width: 50%;
+        gap: 5px;
+        left: 100px;
+        bottom: 470px;
+    }
+}
+
+@media(max-width:550px){
+    .header-contents{
+        bottom: 530px;
+    }
+    .header-contents p{
+        display: none;
+    }
+}
+
+@media(max-width:460px){
+    .header{
+        height: 25vh;
+    }
+    .header-contents{
+        bottom: 600px;
+    }
+}
